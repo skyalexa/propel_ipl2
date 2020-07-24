@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="IPL visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="./style.css" rel="stylesheet" />
+    <title>
+        IPL visualization
+    </title>
+</head>
+
+<body>
+    <div align="center"><h1><u>IPL Dataset Visualization</u></h1></div>
+    <div id="matches-played-per-year" class="a" style="width: 1130px; height: 500px; margin: 0 auto;margin-top:50px"></div>
+    
+    <div id="teams-won-per-year" class="a" style="width: 1130px; height: 500px; margin: 0 auto;margin-top:50px"></div>
+
+    <div id="Top-Ten-Economic-Bowlers" class="a" style="width: 1130px; height: 500px; margin: 0 auto;margin-top:50px"></div>
+
+     <div id="extra-run-conceded-byteam" class="a" style="width: 1130px; height: 500px; margin: 0 auto;margin-top:50px"></div>
+       
+     <div id="matches played in city" class="a" style="width: 1130px; height: 500px; margin: 0 auto;margin-top:50px"></div><br/>
+
+    <div
+        style="width: 1130px; height: 50px; margin: 0 auto; margin-top: 20px " >
+     <h2>
+          <b>Select the season to see the extra runs conceded by each team</b>
+    </h2>
+        <select id="year" name="year">
+          <option value="" selected disabled hidden>Select Year</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+        </select>
+        <button type="button" onclick="showData()">Show</button>
+      </div>
+   <div id="show-data" class="a" style="width: 1130px; height: 500px; margin: 0 auto;margin-top:50px"></div>          
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
